@@ -1,0 +1,42 @@
+*{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            border: solid 2px red;           
+        }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: black;
+}
+
+a{
+    text-decoration: none; /* Tar bort underline hos länkar*/
+    color: white;
+    align-items: center;
+    padding: 20px;
+    margin-left: 120px;
+    font-family: Verdana;
+    font-weight: 600; /* Blir fet-stil*/
+}  
+
+.logo{
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+hero{
+width: 100%;
+display: grid;
+grid-template-areas: stack; /* För att detta är container till min div måste den innehålla den*/
+place-items: center;
+}
+
+.man{
+    grid-area: stack; /* Tillåter att man stackar på varandra*/
+    background-size: cover; /* Att bilden inte blir större än det man ser*/
+    width: 100vh;
+} 
