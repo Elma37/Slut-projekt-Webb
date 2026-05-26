@@ -1,15 +1,14 @@
 *{  
             margin: 0;
             padding: 0;
-            box-sizing: border-box; 
-            border: solid 2px red;           
+            box-sizing: border-box;           
         }
 
-header{
+header, footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 70px;
+    padding: 20px 30px;
     background-color: black;
 }
 
@@ -18,7 +17,7 @@ a{
     color: white;
     align-items: center;
     padding: 20px;
-    margin-left: 120px;
+    margin-left: 110px;
     font-family: Verdana;
     font-weight: 600; /* Blir fet-stil*/
 }  
@@ -29,14 +28,46 @@ a{
 }
 
 hero{
-width: 100%;
-display: grid;
-grid-template-areas: stack; /* För att detta är container till min div måste den innehålla den*/
-place-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-areas: stack; /* För att detta är container till min div måste den innehålla den*/
+    place-items: center;
 }
 
 .man{
     grid-area: stack; /* Tillåter att man stackar på varandra*/
     background-size: cover; /* Att bilden inte blir större än det man ser*/
-    width: 100vh;
+    width: 150vh;
+    height: 100vh;
+    margin-left: -330px; /* Bilden är inte centrerat så att detta gör det manuellt*/
 } 
+
+.text-container{
+    grid-area: stack; /* Tillåter att man stackar på varandra*/
+    background-color: #FFD580; /* Light orange color code*/
+    width: 50%;
+    height: 150px;
+    opacity: 0.50; /* Gör hela diven och allt inuti 50% genomskinlig*/
+    text-align: center;
+    padding: 10px;
+    color: black;
+    z-index: 1; /* Gör att den är ovanpå bilden*/
+    font-weight: 600; /* Blir fet-stil*/
+    margin-left: -330px; /* Text container är inte centrerat så att detta gör det manuellt*/
+}
+
+button{
+     font-weight: 600; /* Blir fet-stil*/
+     border: solid 3px black;
+     font-size: 17px;
+     height: 30px;
+     width: 150px;
+     border-radius: 10px; /* Kanterna på knappen blir rundare 10px var*/
+     background-color: #FFD580; /* Light orange color code*/
+}
+
+.bottomfooter{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
