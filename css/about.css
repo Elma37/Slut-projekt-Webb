@@ -1,0 +1,51 @@
+*{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;           
+        }
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: black;
+}
+
+a{
+    text-decoration: none; /* Tar bort underline hos länkar*/
+    color: white;
+    align-items: center;
+    padding: 20px;
+    margin-left: 110px;
+    font-family: Verdana;
+    font-weight: 600; /* Blir fet-stil*/
+}  
+
+.logo{
+    height: 10vh;
+    margin-bottom: 10px;
+}
+.hero{
+    text-align: center;
+    background: linear-gradient(to top, mediumseagreen, mediumaquamarine); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
+    height: 100vh; /* div hero blir lika stor som webbläsarens fönster*/
+    padding: 25vh;
+    font-size: 20px;
+}
+
+h2,h1,.text{ /* Jag vill ha padding enpart på h2, h1 och .text*/
+    padding: 10px;
+}
+
+ul{
+    display: inline-block; /* Listan tar bara så mycket plats som den behöver*/
+    text-align: left; /* Texten ska behålla sig på vänster sidan av listan*/
+    margin-left: 11vh; /* Finjusterar listan så den blir centrerat*/
+}
+
+.bottomfooter{
+    color: white;
+    background-color: black;
+    text-align: center;
+}

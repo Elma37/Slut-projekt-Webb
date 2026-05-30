@@ -67,7 +67,7 @@ button{
 }
 
 section{
-    height: 50vh;
+    height: 60vh;
     background-color: darkcyan;
 }
 
@@ -76,25 +76,25 @@ section h1,h2,p{
     padding: 2px;
 }
 
-.card1-3{
+.card1-3{ /* Card 1-3 visas som flex samt jämn mellanrum runt alla*/
     display: flex;
     justify-content: space-around;
     padding: 10px;
 }
 
 .vinkel{
-    height: 300px;
+    height: 30vh;
 }
 
 .mobil-edit{
-    height: 300px;
+    height: 30vh;
 }
 
-.publicera{
-    height: 300px;
+.publicera{ /* Bilden är lite mindre än de andra så den fick förstoras*/
+    height: 30.25vh;
 }
 .card{
-    max-width: 600px;
+    max-width: 46vh;
     border: solid 2px mediumorchid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0); /* Gör skuggan runt om cards*/
 }
