@@ -49,7 +49,7 @@ hero{
     height: 150px;
     opacity: 0.50; /* Gör hela diven och allt inuti 50% genomskinlig*/
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     color: black;
     z-index: 1; /* Gör att den är ovanpå bilden*/
     font-weight: 600; /* Blir fet-stil*/
@@ -66,8 +66,40 @@ button{
      background-color: #FFD580; /* Light orange color code*/
 }
 
+section{
+    height: 50vh;
+    background-color: darkcyan;
+}
+
+section h1,h2,p{
+    text-align: center;
+    padding: 2px;
+}
+
+.card1-3{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.vinkel{
+    height: 300px;
+}
+
+.mobil-edit{
+    height: 300px;
+}
+
+.publicera{
+    height: 300px;
+}
+.card{
+    max-width: 600px;
+    border: solid 2px mediumorchid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0); /* Gör skuggan runt om cards*/
+}
+
 .bottomfooter{
     color: white;
     background-color: black;
-    text-align: center;
 }
