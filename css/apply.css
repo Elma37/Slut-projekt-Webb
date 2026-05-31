@@ -1,0 +1,57 @@
+*{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;           
+        }
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: black;
+}
+
+a{
+    text-decoration: none; /* Tar bort underline hos länkar*/
+    color: white;
+    align-items: center;
+    padding: 20px;
+    margin-left: 110px;
+    font-family: Verdana;
+    font-weight: 600; /* Blir fet-stil*/
+}  
+
+.logo{
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.background{
+    height: 100vh;
+    background: linear-gradient(to top, paleturquoise, mediumslateblue);
+    text-align: center;
+    padding: 20vh;
+    font-size: 20px;
+}
+
+button{
+    width: 40vh;
+    height: 5vh;
+    background: #B946F2; /* Variant av lila färg*/
+    color: white;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 20px;
+    transition: all .3s ease 0s; /* När man hover over färgen dröjer längre innan den går bort*/
+}
+
+button:hover{ /* När man sätter pekaren över knappen ändras färgen till lightseagreen och utseende på muspekaren*/
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+.bottomfooter{
+    color: white;
+    background-color: black;
+    text-align: center;
+}

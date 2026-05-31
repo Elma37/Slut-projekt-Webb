@@ -42,13 +42,13 @@ header, footer{
 }
 
 .hero{
-    background: linear-gradient(to top, mediumturquoise, mediumorchid);
+    background: linear-gradient(to top, mediumturquoise, mediumorchid); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
     text-align: center;
     height: 100vh;
     padding: 30vh;
     font-size: 20px;
 }
-p{
+p{ /* Avstånd mellan alla p element*/
     padding: 10px;
 }
 
