@@ -49,7 +49,7 @@ header, footer{
 .hero{
     background: linear-gradient(to top, mediumturquoise, mediumorchid); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
     text-align: center;
-    height: 100vh;
+    min-height: 100vh; /* div hero blir minst lika stor som webbläsarens fönster men kan växa vid behov*/
     padding: 30vh;
     font-size: 20px;
 }

@@ -33,7 +33,7 @@ a{
 }
 
 .background{
-    height: 100vh; /* div hero blir lika stor som webbläsarens fönster*/
+    min-height: 100vh; /* div background blir minst lika stor som webbläsarens fönster men kan växa vid behov*/
     background: linear-gradient(to top, paleturquoise, mediumslateblue); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
     text-align: center;
     padding: 20vh;

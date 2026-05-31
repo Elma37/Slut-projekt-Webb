@@ -33,9 +33,9 @@ a{
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh; /* section blir minst lika stor som webbläsarens fönster men kan växa vid behov*/
     background-color: darkcyan;
-    padding: 20vh 5vh;
+    padding: 15vh 5vh;
 }
 
 section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 2px padding inget annat*/
@@ -47,6 +47,7 @@ section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin-top: 30px; /* När js koden förstorar bilden syns inte rubriken om detta inte finns*/
 }
 
 .starter-course{
@@ -70,6 +71,7 @@ section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0); /* Gör skuggan runt om cards*/
     text-align: center; 
     padding: 10px 0px; /* Padding måste vara 10px 0px annars flytas hela bilden od sidan*/
+    transition: transform 0.5s ease; /* Övergången sker sakta*/
 }
 
 button{
@@ -80,10 +82,23 @@ button{
     font-size: 15px;
     background: #000080; /* Color code för navy seal blue*/
     color: var(--textcolor);
+    transition: all .3s ease 0s; /* När man hover over färgen dröjer längre innan den går bort*/
+}
+button:hover{ /* Mus pekaren ändrar utseende och knappen ändrar färg när man sätter muspekaren över*/
+    cursor: pointer;
+    background-color: darkgoldenrod;
 }
 
 .bottomfooter{
     color: var(--textcolor);
     background-color: var(--backgroundcolor);
     text-align: center;
+}
+
+@media screen and (max-width: 880px) { /* Skapar en funktion som gör att när skärmens storlek går under 880px sker följande pståenden*/
+    .card1-3{
+        flex-direction: column; /* Gör att istället att det ska stackas vid varandra stackas det under varandra*/
+        align-items: center;
+        gap: 20px;
+    }
 }

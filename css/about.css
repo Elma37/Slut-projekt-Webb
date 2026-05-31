@@ -34,7 +34,7 @@ a{
 .hero{
     text-align: center;
     background: linear-gradient(to top, mediumseagreen, mediumaquamarine); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
-    height: 100vh; /* div hero blir lika stor som webbläsarens fönster*/
+    min-height: 100vh; /* div hero blir minst stor som webbläsarens fönster men kan växa vid behov*/
     padding: 20vh;
     font-size: 20px;
 }

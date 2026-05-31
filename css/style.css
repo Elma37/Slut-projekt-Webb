@@ -72,8 +72,9 @@ button{
 }
 
 section{
-    height: 60vh;
+    min-height: 80vh; /* Den ska ha minst höjd 80vh men om det behövs kan den växa*/
     background-color: darkcyan;
+    padding: 8vh;
 }
 
 section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 2px padding inget annat*/
@@ -85,6 +86,7 @@ section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin-top: 35px; /* När js koden förstorar bilden syns inte rubriken och texten om detta inte finns*/
 }
 
 .vinkel{
@@ -102,9 +104,18 @@ section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 
     max-width: 46vh;
     border: solid 2px mediumorchid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.0); /* Gör skuggan runt om cards*/
+    transition: transform 0.5s ease; /* Övergången sker sakta*/
 }
 
 .bottomfooter{
     color: var(--textcolor);
     background-color: var(--backgroundcolor);
+}
+
+@media screen and (max-width: 880px) { /* Skapar en funktion som gör att när skärmens storlek går under 880px sker följande påståenden*/
+    .card1-3{
+        flex-direction: column; /* Gör att istället att det ska stackas vid varandra stackas det under varandra*/
+        align-items: center;
+        gap: 20px;
+    }
 }
