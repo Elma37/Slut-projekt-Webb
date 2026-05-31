@@ -4,17 +4,22 @@
             box-sizing: border-box;           
         }
 
+:root{ /* Skapar variabler för färger, så istället för att ändra färger på flera ställe ändrar jag den här*/
+    --backgroundcolor: black;
+    --textcolor: white;
+}
+
 header, footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: black;
+    background-color: var(--backgroundcolor);
 }
 
 .lankar a{ /* Vill bara att länkar i headern får margin-left 110px men inte andra länkar*/
     text-decoration: none; /* Tar bort underline hos länkar*/
-    color: white;
+    color: var(--textcolor);
     align-items: center;
     padding: 20px;
     margin-left: 110px;
@@ -53,7 +58,7 @@ p{ /* Avstånd mellan alla p element*/
 }
 
 .bottomfooter{
-    color: white;
-    background-color: black;
+    color: var(--textcolor);
+    background-color: var(--backgroundcolor);
     text-align: center;
 }

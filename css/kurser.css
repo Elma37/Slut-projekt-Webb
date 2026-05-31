@@ -3,6 +3,7 @@
             padding: 0;
             box-sizing: border-box;        
         }
+        
 :root{ /* Skapar variabler för färger, så istället för att ändra färger på flera ställe ändrar jag den här*/
     --backgroundcolor: black;
     --textcolor: white;
