@@ -1,0 +1,59 @@
+*{  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;           
+        }
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: black;
+}
+
+.lankar a{ /* Vill bara att länkar i headern får margin-left 110px men inte andra länkar*/
+    text-decoration: none; /* Tar bort underline hos länkar*/
+    color: white;
+    align-items: center;
+    padding: 20px;
+    margin-left: 110px;
+    font-family: Verdana;
+    font-weight: 600; /* Blir fet-stil*/
+}  
+
+.logo{
+    height: 10vh;
+    margin-bottom: 10px;
+}
+.fa-envelope{ /* Emojin blir svart, får en border som är 2px stor och är vitt där kanterna blir 20px rundare, bakgrunden i bordern blir vit och border blir 15px stor*/
+    color: black;
+    border: solid 2px white;
+    border-radius: 20px;
+    background: white;
+    border-width: 15px;
+}
+
+.email{
+    display: flex; /* Sätter emojin och texten på samma rad*/
+    justify-content: center; /* Gör att hela email diven centreras i mitten av sidan*/
+    align-items: center; /* Texten centrerar sig enligt emojin*/
+    font-size: 25px;
+}
+
+.hero{
+    background: linear-gradient(to top, mediumturquoise, mediumorchid);
+    text-align: center;
+    height: 100vh;
+    padding: 30vh;
+    font-size: 20px;
+}
+p{
+    padding: 10px;
+}
+
+.bottomfooter{
+    color: white;
+    background-color: black;
+    text-align: center;
+}

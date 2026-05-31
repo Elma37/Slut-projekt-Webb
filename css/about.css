@@ -30,11 +30,11 @@ a{
     text-align: center;
     background: linear-gradient(to top, mediumseagreen, mediumaquamarine); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
     height: 100vh; /* div hero blir lika stor som webbläsarens fönster*/
-    padding: 25vh;
+    padding: 20vh;
     font-size: 20px;
 }
 
-h2,h1,.text{ /* Jag vill ha padding enpart på h2, h1 och .text*/
+h2,h1,p,.text{ /* Jag vill ha padding enpart på h2, h1 och .text*/
     padding: 10px;
 }
 
