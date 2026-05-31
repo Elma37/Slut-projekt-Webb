@@ -71,7 +71,7 @@ section{
     background-color: darkcyan;
 }
 
-section h1,h2,p{
+section h1,h2,p{ /* Vill bara att section, h1, h2 och p blir centretat och får 2px padding inget annat*/
     text-align: center;
     padding: 2px;
 }

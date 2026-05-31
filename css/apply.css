@@ -27,8 +27,8 @@ a{
 }
 
 .background{
-    height: 100vh;
-    background: linear-gradient(to top, paleturquoise, mediumslateblue);
+    height: 100vh; /* div hero blir lika stor som webbläsarens fönster*/
+    background: linear-gradient(to top, paleturquoise, mediumslateblue); /* färg på backgrunden av sidan, 2 färger blandar sig med varandra där ena börjar på ovansidan*/
     text-align: center;
     padding: 20vh;
     font-size: 20px;
@@ -41,7 +41,7 @@ button{
     color: white;
     font-size: 20px;
     border: solid 2px black;
-    border-radius: 20px;
+    border-radius: 20px; /* Kanterna på knappen blir rundare*/ 
     transition: all .3s ease 0s; /* När man hover over färgen dröjer längre innan den går bort*/
 }
 
